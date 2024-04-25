@@ -43,3 +43,50 @@ a:hover {
 	- 640px
 	- 1000px
 */
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+
+}
+
+li {
+  margin-bottom: 2px;
+
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+
+@media (min-width: 640px) {
+  ul {
+    display: flex;
+  }
+
+  li {
+    flex-basis: 25%;
+    margin-right: 2px;
+
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .hlavicka {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    margin: 0;
+  }
+}
